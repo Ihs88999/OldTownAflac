@@ -1,0 +1,47 @@
+body{
+	background: #ffffff;
+}
+.container{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 200px;
+	margin: auto;
+}
+.slope{
+	margin: 0 -20px;
+	transform-origin: left center;
+}
+.slope:nth-child(odd){
+	background: #ff7800;
+	transform: rotate(3deg);
+	margin-top: -200px ;
+}
+.slope:nth-child(even){
+	background: #ff7800;
+	transform: rotate(-3deg);
+}
+.content{
+	margin: 0 auto;
+}
+.content h1{
+	font-size: 40px;
+	position: ;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 0px;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	background: #ff7800;
+	color: #ffffff;
+}
+.logos{
+    margin: auto;
+}
+
+.region{
+    margin: auto;
+	background-color: #3b87f7;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+}
+
