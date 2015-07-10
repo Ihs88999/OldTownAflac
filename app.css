@@ -1,3 +1,241 @@
-h1{
-	color:orange;
+html, body { 
+	margin: 0px;
+	padding: 0px;
 }
+
+body { 
+	background-color: #3B87F8;
+} 
+
+span {
+	color: #FF7800;
+}
+
+.section-divider { 
+	background: #3B87F8;
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: -40px 0px -40px 0px;
+	transform: rotate(-4deg);
+  	transform: skew(0deg,-3deg);
+	z-index: 1;
+} 
+
+#what-is-aflac { 
+	font-family: Century Gothic;
+	margin-top: 60px;
+	margin-left: 15px;
+	font-size: 2.5em;
+} 
+
+.aflac-video-section { 
+	margin: auto;
+	width: 100%;
+	height: 700px;
+	background: white;
+} 
+
+#aflac-video { 
+	width: 80%;
+	height: 500px;
+	margin: auto;
+}
+
+#aflac-video-text { 
+	text-align: center;
+	color: #689CC7;
+	font-family: Century Gothic;
+	font-size: 1.5em;
+}
+
+#about-pasadena-div { 
+	background-color: white;
+	margin: -40px 0px 40px 0px;
+	position: relative;
+	z-index: -1;
+} 
+
+.section-heading { 
+	margin: auto;
+	text-align: left;
+	color: #FFFFFF;
+	font-family: Century Gothic;
+} 
+ 
+#why-pasadena { 
+	text-align: center;
+	font-size: 2.5em;
+	padding: 30px;
+	margin: 5px 0px 15px 0px;
+} 
+
+.about-videos {
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	position: relative;
+	z-index: 4;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #FF7800;
+	border-radius: 100%;
+	padding: 50px;
+}
+
+#old-town-video {
+	border-radius: 100%;
+	background: url(https://a1.muscache.com/locations/uploads/photo/image/19679/0_5184_0_3456_one_pasadena-at-night-louises-trattoria-staniloff061.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#old-town-video:hover > .blue-button-circle { 
+	background-color: #FF7800;
+}
+
+#our-office-video { 
+	border-radius: 100%;
+	background: url(https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10380277_1612242618995757_8845293108754294105_n.jpg?oh=f068334bd6a5b9af31760a60c81539cb&oe=56266C57);
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#our-office-video:hover > .blue-button-circle { 
+	background-color: #FF7800;
+} 
+
+
+.blue-button-circle { 
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	top: 50px;
+	right: 50px;
+	bottom: 50px;
+	left: 50px;
+	background-color: #3B87F8;
+	border-radius: 100%;
+	cursor: pointer;
+	position: absolute;
+	z-index: 5;
+} 
+
+.play-triangle { 
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 20px 0px 20px 40px;
+	position: absolute;
+	z-index: 7;
+	top: 50px;
+	right: 50px;
+	bottom: 50px;
+	left: 40px;
+  	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 35px solid white;
+	margin: auto;
+}
+
+.play-triangle:focus { 
+	outline: 0;
+	border: 1px solid hsl(210, 58%, 69%);
+	box-shadow: 0 0 0 3px hsla(210, 76%, 57%, 0.5);
+}
+
+.video-title { 
+	width: 25%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 100px;
+	color: white;
+	margin-top: 25px;
+	font-family: Century Gothic;
+	font-size: 1.7em;
+}
+
+table { 
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	border-spacing: 5px;
+} 
+
+li { 
+	margin-top: 15px;
+	width: 90%;
+	text-align: left;
+	list-style-type: none;
+	border-bottom: 2px solid black;
+} 
+
+#pasadena-gallery-events-divider {
+	width: 100%;
+	background-color: #FF7800;
+}
+
+.gallery-events-section {
+	width: 100%;
+	background-color: #FF7800;
+	vertical-align: left;
+	margin: 0px;
+}
+
+.info-titles {
+	color: white;
+	font-family: Century Gothic;
+	font-size: 2.5em;
+	margin: auto;
+	margin-top: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+#gallery-event-table { 
+	width: 90%;
+	height: 450px;
+	background-color: #FF7800;
+	border-padding: 15px;
+	padding-bottom: 150px;
+}
+
+#gallery-block { 
+	width: 500px;
+	height: 300px;
+	background-color: black;
+	margin: auto;
+	border:  5px solid black;
+} 
+
+#events-block { 
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	margin: auto;
+	overflow: auto;
+	border: 5px solid black;
+} 
+
+#event-list { 
+	width: 85%;
+	text-align: center;
+	font-family: Monaco;
+	font-size: 1.1em;
+} 
+
+#blue-back { 
+	width: 100%;
+	background-color: rgba(59,135,248,0.2); 
+}
+
+#orange-back { 
+	width: 100%;
+	background-color: rgba(255,120,0,0.2); 
+}
+
+.event-description { 
+	font-size: .7em;
+} 
