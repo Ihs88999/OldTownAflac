@@ -74,26 +74,28 @@ nav {
 .aflac-video-section { 
 	margin: auto;
 	width: 100%;
-	height: 700px;
+	height: middle;
 	background: white;
 } 
 
 #aflac-video { 
 	width: 80%;
-	height: 500px;
+	height: middle;
 	margin: auto;
 }
 
 #aflac-video-text { 
 	text-align: center;
+	vertical-align: middle;
 	color: #689CC7;
 	font-family: Century Gothic;
 	font-size: 1.5em;
 }
 
 #about-pasadena-div { 
+	width: 100%;
 	background-color: white;
-	margin: -40px 0px 40px 0px;
+	margin: -60px 0px 40px 0px;
 	position: relative;
 	z-index: -1;
 } 
@@ -104,12 +106,18 @@ nav {
 	color: #FFFFFF;
 	font-family: Century Gothic;
 } 
+
+.pasadena-div { 
+	width: 100%;
+	height: auto;
+	padding: 30px 0px 130px 0px;
+	text-align: center;
+} 
  
 #why-pasadena { 
 	text-align: center;
 	font-size: 2.5em;
-	padding: 30px;
-	margin: 5px 0px 15px 0px;
+	margin: auto;
 } 
 
 .about-videos {
@@ -118,11 +126,13 @@ nav {
 	margin: auto;
 	position: relative;
 	z-index: 4;
+	max-width: 100%;
 	width: 320px;
 	height: 320px;
 	border: 5px solid #FF7800;
 	border-radius: 100%;
 	padding: 50px;
+	margin: 50px;
 }
 
 #old-town-video {
@@ -149,10 +159,18 @@ nav {
 	background-color: #FF7800;
 } 
 
+.video-title {
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 1.7em;
+	margin-top: 210px;
+}
 
 .blue-button-circle { 
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	margin: auto;
 	top: 50px;
 	right: 50px;
@@ -172,13 +190,13 @@ nav {
 	border-width: 20px 0px 20px 40px;
 	position: absolute;
 	z-index: 7;
-	top: 50px;
-	right: 50px;
-	bottom: 50px;
-	left: 40px;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
   	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent;
-	border-left: 35px solid white;
+	border-left: 30px solid white;
 	margin: auto;
 }
 
@@ -188,17 +206,6 @@ nav {
 	box-shadow: 0 0 0 3px hsla(210, 76%, 57%, 0.5);
 }
 
-.video-title { 
-	width: 25%;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 100px;
-	color: white;
-	margin-top: 25px;
-	font-family: Century Gothic;
-	font-size: 1.7em;
-}
-
 table { 
 	width: 75%;
 	margin: auto;
@@ -206,24 +213,24 @@ table {
 	border-spacing: 5px;
 } 
 
-li { 
-	margin-top: 15px;
-	width: 90%;
-	text-align: left;
-	list-style-type: none;
-	border-bottom: 2px solid black;
-} 
+
+/*----- GALLERY AND EVENTS -----*/
+
 
 #pasadena-gallery-events-divider {
 	width: 100%;
 	background-color: #FF7800;
+	display: relative;
+	z-index: -1;
 }
 
 .gallery-events-section {
 	width: 100%;
+	height: auto;
 	background-color: #FF7800;
-	vertical-align: left;
-	margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 25px;
 }
 
 .info-titles {
@@ -231,50 +238,57 @@ li {
 	font-family: Century Gothic;
 	font-size: 2.5em;
 	margin: auto;
-	margin-top: 30px;
-	position: relative;
-	z-index: 1;
-}
-
-#gallery-event-table { 
-	width: 90%;
-	height: 450px;
-	background-color: #FF7800;
-	border-padding: 15px;
-	padding-bottom: 150px;
-}
-
-#gallery-block { 
-	width: 500px;
-	height: 300px;
-	background-color: black;
-	margin: auto;
-	border:  5px solid black;
-} 
-
-#events-block { 
-	width: 500px;
-	height: 300px;
-	background-color: white;
-	margin: auto;
-	overflow: auto;
-	border: 5px solid black;
-} 
-
-#event-list { 
-	width: 85%;
 	text-align: center;
+	position: relative;
+	z-index: 10;
+	margin-top: -50px;
+}
+
+.gallery-events-div { 
+	width: 500px;
+	height: 300px; 
+	border: 5px solid black;
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: 20px 20px 100px 20px;
+} 
+
+#gallery-div { 
+
+} 
+
+#events-div {
+	text-align: center;
+	vertical-align: middle;
+} 
+
+#events-list { 
+	width: 100%;
+	height: auto;
 	font-family: Monaco;
 	font-size: 1.1em;
+	background-color: white;
+} 
+
+.event { 
+	width: 100%;
+	margin-left: -20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 90%;
+	text-align: left;
+	list-style-type: none;
+	border-bottom: 2px solid black;
+
 } 
 
 #blue-back { 
-	width: 100%;
 	background-color: rgba(59,135,248,0.2); 
 }
 
 #orange-back { 
-	width: 100%;
 	background-color: rgba(255,120,0,0.2); 
 }
 
@@ -287,8 +301,14 @@ li {
 
 .meet-the-teams-section { 
 	width: 100%;
+	height: auto;
 	margin-top: -50px;
+	margin-bottom: -80px;
 	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 110px;
+	display: relative;
+	z-index: 0;
 } 
 
 .team-table { 
@@ -336,10 +356,18 @@ li {
 	margin: auto;
 	background-color: #3B87F7;
 	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	border-radius: 5px;
 }
 
 /*----- AVAILABLE POSITIONS -----*/
 
+#available-positions-divider { 
+	height: 200px;
+	margin-top: 30px;
+	margin-bottom: -45px;
+	background-color: #FF7800;
+	z-index: 0;
+} 
 
 hr, img {
 	border: 0;
@@ -354,9 +382,9 @@ hr, img {
 	margin-top: 5px;		
 }
 
-.job-position-block { 
+.job-position-div { 
 	width: 100%;
-	height: 500px;
+	height: auto;
 	background-color: #FF7800;
 } 
 
@@ -403,22 +431,27 @@ a:focus {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 2.5em;
 	color: #FFFFFF;
+	font-family: Century Gothic;
 }
 
 h3 {
-	font-size: 20px;	
+	font-size: 1.5em;
+	font-family: Century Gothic;	
 }
+
+h5 { 
+	font-family: Century Gothic;
+} 
 
 @media (min-width:768px) {    
-}
-
-.job-container {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;	
+	.job-container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 @media (min-width:768px) {
@@ -473,19 +506,19 @@ h3 {
 
 @media (min-width:1200px) {
 	.col-lg-10, .col-lg-12 {
-	float: left;
+		float: left;
 	}
 
 	.col-lg-12 {
-	width: 100%
+		width: 100%
 	}
 
 	.col-lg-10 {
-	width: 83.33333333%
+		width: 83.33333333%
 	}
 
 	.col-lg-offset-1 {
-	margin-left: 8.33333333%
+		margin-left: 8.33333333%
 	}
 }
 
@@ -522,9 +555,12 @@ h3 {
 	border-radius: 0;
 	color: #fff;
 	width: 60%;	
-    	background-color: blue;
+    	background-color: #3B87F8;
 	font-size: 200%;
-	line-height: 65px;	
+	line-height: 65px;
+	border-radius: 5px;
+	font-family: Century Gothic;
+	margin-top: 20px;
 }
 
 .btn-dark:active, .btn-dark:focus {
@@ -538,11 +574,10 @@ h3 {
 }
 
 .job-item {
-	margin-bottom: 10px;
-	margin-right: 5px;
-	margin-left: 40px;
-	background-color:white;
-	padding:.5px;			
+	margin: 20px 5px 20px 40px;
+	background-color: white;
+	padding: .5px;	
+	border-radius: 5px;
 }
 
 .img-job {
