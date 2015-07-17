@@ -1,6 +1,8 @@
 html, body { 
 	margin: 0px;
 	padding: 0px;
+	width: 100%;
+    height: 100%;
 }
 
 body { 
@@ -10,6 +12,84 @@ body {
 span {
 	color: #FF7800;
 }
+
+/*----- Header -----*/
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: black;
+    background-image: url(http://s12.postimg.org/fgppq1xe5/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+	font: "Amatic SC", cursive;
+    position: relative;
+    width: 100%;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+	font: 6em "Amatic SC", cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header .header-content .header-content-inner h3 {
+	font: 3em "Amatic SC", cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
 
 /*----- NAVIGATION BAR -----*/
 
@@ -47,6 +127,59 @@ nav {
 	text-decoration:underline;
 	font-weight:bold;
 }
+
+/*----- NAVIGATION BAR -----*/
+
+
+.navigation:before,
+.navigation:after {
+    content: " ";
+    display: table;
+}
+.navigation:after {
+    clear: both;
+}
+.navigation {
+    *zoom: 1;
+}
+
+nav   {
+	height: 40px;
+	width: 100%;
+	
+	margin-right:auto;
+	margin-left:auto;
+	
+	position: relative;
+	border-bottom: 1px solid #283744;
+	
+	clear:both;
+	color:#2E9AFE;
+	text-align:center;
+	font: 32px "Amatic SC", cursive;
+	
+	}
+		 
+	nav ul{ 
+		list-style:none;
+		background-color:#2E9AFE;
+		padding:0.7em 0;
+		
+		}	 
+	nav li{  display:inline;}
+	nav li a{
+		padding:1em 1em;
+		color:black;
+		border-right:1px solid white;
+		border-left:1px solid white;
+		text-decoration:none;
+		font-weight:bold;
+		}
+		
+	nav li a:hover{	color:orange;
+				text-decoration:underline;
+				font-weight:bold;
+			}
 
 
 /*----- WHAT IS AFLAC -----*/
@@ -574,7 +707,7 @@ h5 {
 }
 
 .job-item {
-	margin: 20px 5px 20px 40px;
+	margin: 20px 5px 15px 40px;
 	background-color: white;
 	padding: .5px;	
 	border-radius: 5px;
@@ -588,7 +721,152 @@ h5 {
 	opacity: .8;
 }
 
-#job .container .row .col-lg-10.col-lg-offset-1.text-center .row .col-md-6 .job-item .job-item {
+.job-position-div .job-container .row .col-lg-10.col-lg-offset-1.text-center .row .col-md-6 .job-item .job-item {
 	text-align: right;
 }
 
+/*------Joe Additions---------*/
+
+/*----Display on Hover----*/
+a.hideDisplay{
+  position: relative;
+  z-index: 20; 
+  color: #000;
+  text-decoration: none
+}
+  
+a.hideDisplay:hover{
+  z-index: 30; 
+}
+
+a.hideDisplay span.showDisplayOnHover{
+  display: none
+}
+
+a.hideDisplay:hover span.showDisplayOnHover{ 
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  line-height: 50px;
+  
+  top: 5px; 
+  left: 20px; 
+  
+  width: auto;
+  padding: 10px;
+  
+  border: 5px solid #3b87f7;
+  border-radius: 15px;
+  background-color: #ff7800; 
+  
+  color: #000000;
+  text-align: center;
+}
+
+span.showBodyOfDisplayOnHover {
+  font-size: 16px; 
+  font-weight: normal;
+  color: #444;
+  line-height: 18px; 
+}
+/*----Overlap for region section----*/
+#rectangle{
+    height:auto;
+    width:72%;
+    background:#3b87f7;
+    position:relative;
+    left:auto;
+    top:auto;
+    color: #fff;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	overflow: hidden;
+	
+ 
+}
+#circle{
+    height:250;
+    width:250;
+    background-color: #3b87f7;
+    -webkit-transform: rotate(180deg);
+    border-radius:200px;
+    position:absolute;
+    top:720px;
+    left: 320px;
+    color: #fff;
+	box-shadow: -5px -5px 5px 5px #003399;
+	margin: auto;
+}
+
+.lenzo{
+    font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 40px;
+}
+
+.regdir{
+    font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 25px;
+}
+
+/* ----Contact Us section ----*/ 
+
+#footer{ 
+	margin: auto; 
+	width: 100%; 
+	font-family: Cambria, Georgia, serif; 
+	font-size: 32px; 
+	color: white;}
+
+#footer {
+	width: 100%; 
+	height: 40%; 
+	background-color: 1E90FF;
+	}
+	
+#footer #CONTACT_ME{
+	font-family: Cambria, Georgia, serif;
+	padding-right: 2%
+	}
+	
+#footer #contact_bar {
+	width: 100%; 
+	margin: auto; 
+	font-family: Cambria, Georgia, serif;
+	}
+
+#SpaceOut {
+	width: 100%;	
+}
+
+#SpaceOut #left{
+	width: 33%;
+}
+
+#SpaceOut #center{
+	width: 34%;
+}
+
+#SpaceOut #right{
+	width: 33%;
+}
+
+#footer #HEY_HEY_LISTEN table {
+	width: 80%;
+	padding-top: 20px;
+	padding-right: 10%;
+	padding-left: 25%;
+	padding-bottom: 5%;
+	font-size: 24px;
+}
+
+#footer table #Contact_US {
+	width:80%;
+	padding-top: 10px;
+	border-left: 1px solid #fff; 
+	border-right: 1px solid #fff;
+}
+
+#footer #Social_Media table td{
+	width: 100px;
+}
