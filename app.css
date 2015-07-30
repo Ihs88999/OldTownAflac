@@ -1,12 +1,18 @@
 html, body { 
+	margin: 0px;
+	padding: 0px;
 	width: 100%;
     height: 100%;
 }
 
+body { 
+	background-color: #3B87F8;
+	
+} 
+
 span {
 	color: #FF7800;
 }
-
 
 /*----- Header -----*/
 header {
@@ -90,70 +96,80 @@ header .header-content .header-content-inner p {
 /*----- NAVIGATION BAR -----*/
 
 
-.navigation:before,
-.navigation:after {
+.main-nav:before,
+.main-nav:after {
     content: " ";
     display: table;
 }
-.navigation:after {
+.main-nav:after {
     clear: both;
 }
-.navigation {
+.main-nav {
     *zoom: 1;
 }
 
-nav   {
+	nav.main-nav   {
+
+
 	height: 40px;
 	width: 100%;
 	
 	margin-right:auto;
 	margin-left:auto;
 	
-	position: relative;
-	border-bottom: 1px solid #283744;
+	z-index:50;
 	
 	clear:both;
 	color:#2E9AFE;
 	text-align:center;
 	font: 32px "Amatic SC", cursive;
 	
+	
+	display:inline-block;
+	
+	
 	}
 		 
-	nav ul{ 
+	nav.main-nav ul{ 
 		list-style:none;
-		background-color:#2E9AFE;
+		background-color:black;
 		padding:0.7em 0;
 		
 		}	 
-	nav li{  display:inline;}
-	nav li a{
+	nav.main-nav li{  display:inline;}
+	nav.main-nav li a{
 		padding:1em 1em;
-		color:black;
-		border-right:1px solid white;
-		border-left:1px solid white;
+		color:white;
+		
 		text-decoration:none;
 		font-weight:bold;
 		}
 		
-	nav li a:hover{	color:orange;
+	nav.main-nav li a:hover{	
+				color:yellow;
 				text-decoration:underline;
 				font-weight:bold;
 			}
 
+			
 
+			
+			
+			
+			
+			
+	nav.main-nav.stickytop {
+    position:fixed;
+    top:-5%;
+    width: 100%; 
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+	.container {
+		display: inline;
+		margin:0 auto;
+	  
+	}
+  
 
 
 /*----- WHAT IS AFLAC -----*/
@@ -173,7 +189,7 @@ nav   {
 
 #what-is-aflac { 
 	font-family: Century Gothic;
-	margin-top: 200px;
+	margin-top: 60px;
 	margin-left: 15px;
 	font-size: 2.5em;
 } 
@@ -662,7 +678,7 @@ h5 {
 	border-radius: 0;
 	color: #fff;
 	width: 60%;	
-    background-color: #3B87F8;
+    	background-color: #3B87F8;
 	font-size: 200%;
 	line-height: 65px;
 	border-radius: 5px;
@@ -681,7 +697,7 @@ h5 {
 }
 
 .job-item {
-	margin: 20px 5px 20px 40px;
+	margin: 20px 5px 15px 40px;
 	background-color: white;
 	padding: .5px;	
 	border-radius: 5px;
@@ -695,7 +711,152 @@ h5 {
 	opacity: .8;
 }
 
-#job .container .row .col-lg-10.col-lg-offset-1.text-center .row .col-md-6 .job-item .job-item {
+.job-position-div .job-container .row .col-lg-10.col-lg-offset-1.text-center .row .col-md-6 .job-item .job-item {
 	text-align: right;
 }
 
+/*------Joe Additions---------*/
+
+/*----Display on Hover----*/
+a.hideDisplay{
+  position: relative;
+  z-index: 20; 
+  color: #000;
+  text-decoration: none
+}
+  
+a.hideDisplay:hover{
+  z-index: 30; 
+}
+
+a.hideDisplay span.showDisplayOnHover{
+  display: none
+}
+
+a.hideDisplay:hover span.showDisplayOnHover{ 
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  line-height: 50px;
+  
+  top: 5px; 
+  left: 20px; 
+  
+  width: auto;
+  padding: 10px;
+  
+  border: 5px solid #3b87f7;
+  border-radius: 15px;
+  background-color: #ff7800; 
+  
+  color: #000000;
+  text-align: center;
+}
+
+span.showBodyOfDisplayOnHover {
+  font-size: 16px; 
+  font-weight: normal;
+  color: #444;
+  line-height: 18px; 
+}
+/*----Overlap for region section----*/
+#rectangle{
+    height:auto;
+    width:72%;
+    background:#3b87f7;
+    position:relative;
+    left:auto;
+    top:auto;
+    color: #fff;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	overflow: hidden;
+	
+ 
+}
+#circle{
+    height:250;
+    width:250;
+    background-color: #3b87f7;
+    -webkit-transform: rotate(180deg);
+    border-radius:200px;
+    position:absolute;
+    top:720px;
+    left: 320px;
+    color: #fff;
+	box-shadow: -5px -5px 5px 5px #003399;
+	margin: auto;
+}
+
+.lenzo{
+    font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 40px;
+}
+
+.regdir{
+    font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 25px;
+}
+
+/* ----Contact Us section ----*/ 
+
+#footer{ 
+	margin: auto; 
+	width: 100%; 
+	font-family: Cambria, Georgia, serif; 
+	font-size: 32px; 
+	color: white;}
+
+#footer {
+	width: 100%; 
+	height: 40%; 
+	background-color: 1E90FF;
+	}
+	
+#footer #CONTACT_ME{
+	font-family: Cambria, Georgia, serif;
+	padding-right: 2%
+	}
+	
+#footer #contact_bar {
+	width: 100%; 
+	margin: auto; 
+	font-family: Cambria, Georgia, serif;
+	}
+
+#SpaceOut {
+	width: 100%;	
+}
+
+#SpaceOut #left{
+	width: 33%;
+}
+
+#SpaceOut #center{
+	width: 34%;
+}
+
+#SpaceOut #right{
+	width: 33%;
+}
+
+#footer #HEY_HEY_LISTEN table {
+	width: 80%;
+	padding-top: 20px;
+	padding-right: 10%;
+	padding-left: 25%;
+	padding-bottom: 5%;
+	font-size: 24px;
+}
+
+#footer table #Contact_US {
+	width:80%;
+	padding-top: 10px;
+	border-left: 1px solid #fff; 
+	border-right: 1px solid #fff;
+}
+
+#footer #Social_Media table td{
+	width: 100px;
+}
