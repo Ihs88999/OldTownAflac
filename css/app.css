@@ -1,0 +1,1229 @@
+html, body { 
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body { 
+	background-color: black;
+} 
+
+span {
+	color: #F9CE4A;;
+}
+
+/*----- HEADER -----*/
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: black;
+    background-image: url(http://s12.postimg.org/fgppq1xe5/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+	font: "Amatic SC", cursive;
+	position: relative;
+	width: 100%;
+	padding: 100px 15px;
+	text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+	font: 6em "Amatic SC", cursive;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+header .header-content .header-content-inner h3 {
+	font: 3em "Amatic SC", cursive;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+/*----- HEADER Button-----*/
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	background: white;
+	
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: white;
+  
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: white;
+
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: white;
+    box-shadow: none;
+	
+}
+.btn.sharp {
+  border-radius:0;
+  
+}
+
+.btn-lg.round {
+    border-radius: 24px;
+}
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+
+
+
+
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    header .header-content .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+}
+
+/*----- NAVIGATION BAR -----*/
+
+
+.main-nav:before, .main-nav:after {
+    content: " ";
+    display: table;
+}
+
+.navigation:after {
+    clear: both;
+}
+
+.navigation {
+    *zoom: 1;
+}
+
+nav.main-nav {
+	height: 40px;
+	width: 100%;
+	
+	margin-right: auto;
+	margin-left: auto;
+
+	z-index: 50;
+	
+	/*	position: relative;
+	border-bottom: 1px solid #F9CE4A; */
+
+	clear: both;
+	color: #2E9AFE;
+	text-align: center;
+	font: 32px "Amatic SC", cursive;
+	display: inline-block;
+}
+		 
+nav.main-nav ul { 
+	list-style: none;
+	background-color: black;
+	padding: 0.7em 0;	
+}	 
+
+nav.main-nav li {
+	display: inline;
+}
+
+nav.main-nav li a {
+	padding: 1em 1em;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.main-nav li a:hover {
+	color: yellow;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+nav.main-nav.stickytop {
+	position: fixed;
+	top: -5%;
+	width: 100%; 
+}
+
+
+
+/*----- WHAT IS AFLAC -----*/
+
+
+.section-divider { 
+	background: black;
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: -40px 0px -40px 0px;
+	transform: rotate(-4deg);
+  	transform: skew(0deg,-3deg);
+	z-index:1;
+} 
+
+#what-is-aflac { 
+	font-family: Century Gothic;
+	margin-top: 60px;
+	margin-left: 15px;
+	font-size: 2.5em;
+	color: white;
+} 
+
+.aflac-video-section { 
+	margin: auto;
+	width: 100%;
+	height: middle;
+	background: white;
+} 
+
+#aflac-video { 
+	width: 80%;
+	height: middle;
+	margin: auto;
+}
+
+#aflac-video-text { 
+	text-align: center;
+	vertical-align: middle;
+	color: #4EAAB0;
+	font-family: Century Gothic;
+	font-size: 1.5em;
+}
+
+#about-pasadena-div { 
+	width: 100%;
+	background-color: #4EAAB0;
+	margin: -15px 0px -32px 0px;
+	position: relative;
+	z-index: 1;
+} 
+
+.section-heading { 
+	margin: auto;
+	text-align: left;
+	color: #FFFFFF;
+	font-family: Century Gothic;
+} 
+
+.pasadena-div { 
+	width: 100%;
+	height: auto;
+	padding: 30px 0px 130px 0px;
+	text-align: center;
+	background-color: #4EAAB0;
+	z-index: -1;
+} 
+ 
+#why-pasadena { 
+	text-align: center;
+	font-size: 2.5em;
+	margin: auto;
+	color: white;
+} 
+
+.about-videos {
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	position: relative;
+	z-index: 4;
+	max-width: 100%;
+	width: 320px;
+	height: 320px;
+	border: 5px solid #F9CE4A;
+	border-radius: 100%;
+	padding: 50px;
+	margin: 50px;
+}
+
+#old-town-video {
+	border-radius: 100%;
+	background: url(https://a1.muscache.com/locations/uploads/photo/image/19679/0_5184_0_3456_one_pasadena-at-night-louises-trattoria-staniloff061.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#old-town-video:hover > .blue-button-circle { 
+	background-color: #F9CE4A;
+}
+
+#our-office-video { 
+	border-radius: 100%;
+	background: url(https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10380277_1612242618995757_8845293108754294105_n.jpg?oh=f068334bd6a5b9af31760a60c81539cb&oe=56266C57);
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#our-office-video:hover > .blue-button-circle { 
+	background-color: #F9CE4A;
+} 
+
+.video-title {
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 1.7em;
+	margin-top: 210px;
+}
+
+.blue-button-circle { 
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	top: 50px;
+	right: 50px;
+	bottom: 50px;
+	left: 50px;
+	background-color: #4EAAB0;
+	border-radius: 100%;
+	cursor: pointer;
+	position: absolute;
+	z-index: 5;
+} 
+
+.play-triangle { 
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 20px 0px 20px 40px;
+	position: absolute;
+	z-index: 7;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+  	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 30px solid white;
+	margin: auto;
+}
+
+.play-triangle:focus { 
+	outline: 0;
+	border: 1px solid hsl(210, 58%, 69%);
+	box-shadow: 0 0 0 3px hsla(210, 76%, 57%, 0.5);
+}
+
+table { 
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	border-spacing: 5px;
+} 
+
+
+/*----- GALLERY AND EVENTS -----*/
+
+
+#pasadena-gallery-events-divider {
+	width: 100%;
+	background-color: #F9CE4A;
+	display: relative;
+	z-index: 1;
+}
+
+.gallery-events-section {
+	width: 100%;
+	height: auto;
+	background-color: #F9CE4A;
+	text-align: center;
+	vertical-align: middle;
+	padding: 25px;
+	padding-top: 50px;
+}
+
+.info-titles {
+	color: white;
+	font-family: Century Gothic;
+	font-size: 2.5em;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	margin-top: -50px;
+}
+
+.gallery-events-div { 
+	width: 500px;
+	height: 300px; 
+	border: 5px solid black;
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: 20px 20px 100px 20px;
+} 
+
+#gallery-div { 
+} 
+
+#events-div {
+	text-align: center;
+	vertical-align: middle;
+} 
+
+#events-list { 
+	width: 100%;
+	height: auto;
+	font-family: Monaco;
+	font-size: 1.1em;
+	background-color: white;
+} 
+
+.event { 
+	width: 100%;
+	margin-left: -20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 90%;
+	text-align: left;
+	list-style-type: none;
+	border-bottom: 2px solid black;
+} 
+
+
+#orange-back { 
+	background-color: rgba(255,120,0,0.2); 
+}
+
+.event-description { 
+	font-size: .7em;
+}
+
+
+/*----- MEET THE TEAMS -----*/
+
+.meet-the-teams-section { 
+	width: 100%;
+	height: auto;
+	margin-top: -50px;
+	margin-bottom: -80px;
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 110px;
+	display: relative;
+	z-index: 0;
+} 
+
+.team-table { 
+	width: 100%;
+	margin: auto;
+}
+
+.container {
+	width: 100%;
+	height: 100px;
+	margin-top: -70px;
+	display: relative;
+}
+
+.slope {
+	width: 100%;
+	background: #F9CE4A;
+	transform: rotate(-4deg);
+  	transform: skew(0deg,-3deg);
+}
+
+#content {
+	margin: auto;
+	text-align: center;
+}
+
+#content h1 {
+	font-size: 2.5em;
+	position: relative;
+	display: inline-block;
+	height: 80px;
+	line-height: 60px;
+	margin-bottom: 0px;
+	font-family: Century Gothic, 'Bitter', 'Trebuchet MS', Cambria;
+	background: #F9CE4A;
+	color: #FFFFFF;
+}
+
+.logos {
+	margin: auto;
+	margin-top: 50px;
+}
+
+.region{
+	margin: auto;
+	background-color: #4EAAB0;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	border-radius: 5px;
+}
+
+
+.body {
+	background-color: black;
+	overflow: auto;
+	margin-top: 50px;
+}
+ 
+.figcaption {
+	opacity: 0;
+	position:absolute;
+	-webkit-transition: opacity 0.5s ease-out;  
+	-moz-transition: opacity 0.5s ease-out;  
+	-ms-transition: opacity 0.5s ease-out;  
+	-o-transition: opacity 0.5s ease-out;  
+	transition: opacity 0.5s ease-out;
+}
+
+/* (Changed ".figure" to "districtLogo"/"districtLogo2") – This is so the figcaption only appears when hovering over image */ 
+.districtLogo:hover ~ .figcaption {
+	width: 800px;
+	height: auto;
+	opacity: 1;
+	position: absolute;
+	font-size: 1em;
+	line-height: 30px;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	margin-top: 10px; 
+	margin-left: -400px;   
+	margin-width: 80px;
+	padding: 10px;
+	border: 5px solid #FDCC0A;
+	border-radius: 15px;
+	background-color: #00A4B0;
+	color: black;
+	text-align: justify;
+	z-index: 10;
+}
+
+.districtLogo2:hover ~ .figcaption {
+	width: 800px;
+	height: auto;
+	opacity: 1;
+	position: absolute;
+	font-size: 1em;
+	line-height: 30px;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	margin-top: 10px; 
+	margin-left: -160px; 
+	padding: 5px;
+	border: 5px solid #FDCC0A;
+	border-radius: 15px;
+	background-color: #00A4B0; 
+	color: black;
+	text-align: justify;
+	z-index: 10;
+}
+
+.rectangle2{
+	height:auto;
+	width:80%;
+	background:#000000;
+	position:center;
+	left:auto;
+	top:auto;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	z-index: 1;
+}
+
+.rectangle1{
+	height:auto;
+	width:80%;
+	background:#4eaab0;
+	position:relative;
+	left:auto;
+	top:auto;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	z-index: 5;
+	text-align: justify;
+}
+
+.circle {
+	height:250;
+	width:250;
+	border-radius:50%;
+	position:absolute; 
+	color: #fff;
+	margin-top: -135px;
+	margin-left: 80px;
+	overflow: visable;
+	z-index: 8;
+	display:absolute;
+}
+
+.lenzo {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 38px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.regdir {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 32.5px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.lefttext {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.righttext {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.teamname {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.teamleader {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/*----- AVAILABLE POSITIONS -----*/
+
+#available-positions-divider { 
+	height: 200px;
+	margin-top: 30px;
+	margin-bottom: -45px;
+	background-color: #F9CE4A;
+	z-index: 0;
+} 
+
+hr, img {
+	border: 0;
+}
+
+.text-vertical-center, img {
+	vertical-align: middle;
+}
+
+.btn, .text-center, .text-vertical-center {
+	text-align: center;	
+	margin-top: 5px;		
+}
+
+.job-position-div { 
+	width: 100%;
+	height: auto;
+	background-color: #F9CE4A;
+} 
+
+a {
+	background-color: transparent;	
+}
+
+a:active, a:hover {
+	outline: 0;
+}
+
+h1, h2, h3, hr {
+	margin-top: 20px;
+}
+
+.btn, .btn:active {
+	background-image: none;		
+}
+
+*, :after, :before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #337AB7;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: #23527C;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: dotted thin;
+	outline: -webkit-focus-ring-color auto 5px;
+	outline-offset: -2px;
+}
+
+.btn {
+	display: inline-block;	
+}
+
+h2 {
+	font-size: 2.5em;
+	color: #FFFFFF;
+	font-family: Century Gothic;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: Century Gothic;	
+}
+
+h5 { 
+	font-family: Century Gothic;
+} 
+
+@media (min-width:768px) {    
+	.job-container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media (min-width:768px) {
+	.job-container {
+		width: 750px;
+	}
+}
+
+@media (min-width:992px) {
+    	.job-container {
+		width: 970px;
+	}
+}
+
+@media (min-width:1200px) {
+	.job-container {
+		width: 1170px;	
+	}
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;		
+}
+
+.col-lg-10, .col-md-6 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 20px;
+	padding-left: 5px;	
+}
+
+@media (min-width:768px) {
+    	.col-sm-6 {
+		float: left;
+		width: 50%}
+}
+
+@media (min-width:992px) {
+	.col-md-3, .col-md-6 {
+		float: left;
+	}
+
+	.col-md-6 {
+		width: 50%
+	}
+
+	.col-md-3 {
+		width: 25%
+	}
+}
+
+@media (min-width:1200px) {
+	.col-lg-10, .col-lg-12 {
+		float: left;
+	}
+
+	.col-lg-12 {
+		width: 100%
+	}
+
+	.col-lg-10 {
+		width: 83.33333333%
+	}
+
+	.col-lg-offset-1 {
+		margin-left: 8.33333333%
+	}
+}
+
+.btn:active:focus, .btn:focus {
+	outline: dotted thin;
+	outline: -webkit-focus-ring-color auto 5px;
+	outline-offset: -2px;	
+}
+
+.btn:focus, .btn:hover {
+	color: #333;	
+}
+
+.btn:active {
+	outline: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);	
+}
+
+.job-container:after, .job-container:before, .row:after, .row:before {
+	display: table;
+	content: " "
+}
+
+.job-container:after, .row:after {
+	clear: both;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+.btn-dark {
+	border-radius: 0;
+	color: #fff;
+	width: 60%;	
+    	background-color: #4EAAB0;
+	font-size: 200%;
+	line-height: 65px;
+	border-radius: 5px;
+	font-family: Century Gothic;
+	margin-top: 20px;
+}
+
+.btn-dark:active, .btn-dark:focus {
+	color: #fff;
+	background-color: blue;	
+}
+
+.btn-dark:hover {
+	color: #fff;
+	background-color: rgba(0, 0, 0, .7);	
+}
+
+.job-item {
+	margin: 20px 5px 15px 40px;
+	background-color: white;
+	padding: .5px;	
+	border-radius: 5px;
+}
+
+.img-job {
+	margin: 0 auto;
+}
+
+.img-job:hover {
+	opacity: .8;
+}
+
+.job-position-div .job-container .row .col-lg-10.col-lg-offset-1.text-center .row .col-md-6 .job-item .job-item {
+	text-align: right;
+}
+
+#positions-map-divider { 
+	height: 250px;
+	margin-top: -50px;
+	margin-bottom: -45px;
+	background-color:#F9CE4A ;
+	display: relative;
+	z-index: -1;
+}
+
+#google-map { 
+	display: relative;
+	z-index: -5;
+} 
+
+
+/* Available positions popup windows */
+
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(103, 91, 13, 0.6);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.md-content {
+	color: #fff;
+	background: #f9ce4a;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px 40px 30px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 0;
+}
+
+.md-content button {
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+
+.md-trigger:hover {
+	opacity: .8;
+}
+
+
+/* Modal Window fade in and scale up */
+.md-effect-1 .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.md-close {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #eec23b;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+}
+
+button:hover {
+	background: #bd9827;
+}
+
+/*------
+@media screen and (max-width: 32em) {
+	body {
+	font-size: 18%;
+}
+}---------*/
+
+
+/*------Joe Additions---------*/
+
+/*----Display on Hover----*/
+
+a.hideDisplay{
+  position: relative;
+  z-index: 20; 
+  color: #000;
+  text-decoration: none
+}
+  
+a.hideDisplay:hover{
+  z-index: 30; 
+}
+
+a.hideDisplay span.showDisplayOnHover{
+  display: none
+}
+
+a.hideDisplay:hover span.showDisplayOnHover{ 
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  line-height: 50px;
+  
+  top: 5px; 
+  left: 20px; 
+  
+  width: auto;
+  padding: 10px;
+  
+  border: 5px solid #3b87f7;
+  border-radius: 15px;
+  background-color: #ff7800; 
+  
+  color: #000000;
+  text-align: center;
+}
+
+span.showBodyOfDisplayOnHover {
+  font-size: 16px; 
+  font-weight: normal;
+  color: #444;
+  line-height: 18px; 
+}
+
+/*---- Overlap for region section ----*/
+
+#rectangle{
+    height:auto;
+    width:72%;
+    background: #4EAAB0;
+    position:relative;
+    left:auto;
+    top:auto;
+    color: #fff;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	overflow: hidden;
+	
+ 
+}
+#circle{
+    height:250;
+    width:250;
+    background-color: #3b87f7;
+    -webkit-transform: rotate(180deg);
+    border-radius:200px;
+    position:absolute;
+    top:720px;
+    left: 320px;
+    color: #fff;
+	box-shadow: -5px -5px 5px 5px #003399;
+	margin: auto;
+}
+
+.lenzo{
+    font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 40px;
+}
+
+.regdir{
+    font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 25px;
+}
+
+/* ---- CONTACT US ----*/ 
+
+#footer {
+	width: 100%; 
+	height: 40%; 
+	background-color: black;
+	}
+	
+#footer #CONTACT_ME{
+	font-family: Century Gothic;
+	padding-right: 2%;
+	font-size: 24px;
+	color: #ffffff;
+	}
+	
+#footer #contact_bar {
+	width: 100%; 
+	margin: auto; 
+	font-family: Century Gothic;
+	}
+
+#SpaceOut {
+	width: 100%;	
+}
+
+#SpaceOut #left{
+	width: 33%;
+}
+
+#SpaceOut #center{
+	width: 34%;
+}
+
+#SpaceOut #right{
+	width: 33%;
+	color: #ffffff;
+	font-size: 24px;
+}
+
+#footer #HEY_HEY_LISTEN table {
+	width: 80%;
+	padding-top: 5%;
+	padding-right: 10%;
+	padding-left: 27%;
+	padding-bottom: 5%;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: left;
+}
+
+#footer #Submission_Box{
+	width:90%;
+	padding-top: 2%;
+	border-left: 2px solid #fff; 
+	border-right: 2px solid #fff;
+	font-family: Century Gothic;
+	font-size: 15px;
+}
+
+#footer input, #footer button{
+	
+	display: block;
+	width:90%;
+	padding:8px;
+}
+
+#footer button{
+	padding:6px 12px 8px; 
+	text-transform:uppercase; 
+	border:none;
+	cursor:pointer;
+}
+
+#footer textarea	{
+	width: 90%;
+}
+
+form, fieldset{margin:0px; padding:0; border:none;
+}
+#footer button{
+	color:#FFFFFF; 
+	background-color:#3e4047;
+}
+legend{display:none;}
+inherit; vertical-align:middle;}
+
+#footer #Social_Media table {
+	font-family: Century Gothic;
+	font-size: 15px;
+	color: #ffffff;
+}
