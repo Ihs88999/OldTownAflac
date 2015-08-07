@@ -2,19 +2,19 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-    height: 100%;
+	height: 100%;
 }
 
 body { 
-	background-color: #3B87F8;
-	
+	background-color: black;
 } 
 
 span {
-	color: #FF7800;
+	color: #F9CE4A;;
 }
 
-/*----- Header -----*/
+/*----- HEADER -----*/
+
 header {
     position: relative;
     width: 100%;
@@ -30,26 +30,26 @@ header {
 }
 
 header .header-content {
-	font: "Amatic SC", cursive;
-    position: relative;
-    width: 100%;
-    padding: 100px 15px;
-    text-align: center;
+	font: 28px Century Gothic;
+	position: relative;
+	width: 100%;
+	padding: 100px 15px;
+	text-align: center;
 }
 
 header .header-content .header-content-inner h1 {
-	font: 6em "Amatic SC", cursive;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 700;
+	font: Century Gothic, cursive;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 header .header-content .header-content-inner h3 {
-	font: 3em "Amatic SC", cursive;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 700;
+	font: Century Gothic, cursive;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 header .header-content .header-content-inner hr {
@@ -62,6 +62,55 @@ header .header-content .header-content-inner p {
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }
+
+/*----- HEADER Button-----*/
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	background: white;
+	
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: white;
+  
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: white;
+
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: white;
+    box-shadow: none;
+	
+}
+.btn.sharp {
+  border-radius:0;
+  
+}
+
+.btn-lg.round {
+    border-radius: 24px;
+}
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
 
 @media(min-width:768px) {
     header {
@@ -91,100 +140,84 @@ header .header-content .header-content-inner p {
     }
 }
 
-
-
 /*----- NAVIGATION BAR -----*/
 
 
-.main-nav:before,
-.main-nav:after {
+.main-nav:before, .main-nav:after {
     content: " ";
     display: table;
 }
-.main-nav:after {
+
+.navigation:after {
     clear: both;
 }
-.main-nav {
+
+.navigation {
     *zoom: 1;
 }
 
-	nav.main-nav   {
-
-
+nav.main-nav {
 	height: 40px;
 	width: 100%;
 	
-	margin-right:auto;
-	margin-left:auto;
+	margin-right: auto;
+	margin-left: auto;
+
+	z-index: 50;
 	
-	z-index:50;
-	
-	clear:both;
-	color:#2E9AFE;
-	text-align:center;
-	font: 32px "Amatic SC", cursive;
-	
-	
-	display:inline-block;
-	
-	
-	}
+	/*	position: relative;
+	border-bottom: 1px solid #F9CE4A; */
+
+	clear: both;
+	color: #2E9AFE;
+	text-align: center;
+	font: 32px Century Gothic, cursive;
+	display: inline-block;
+}
 		 
-	nav.main-nav ul{ 
-		list-style:none;
-		background-color:black;
-		padding:0.7em 0;
-		
-		}	 
-	nav.main-nav li{  display:inline;}
-	nav.main-nav li a{
-		padding:1em 1em;
-		color:white;
-		
-		text-decoration:none;
-		font-weight:bold;
-		}
-		
-	nav.main-nav li a:hover{	
-				color:yellow;
-				text-decoration:underline;
-				font-weight:bold;
-			}
+nav.main-nav ul { 
+	list-style: none;
+	background-color: black;
+	padding: 0.7em 0;	
+}	 
 
-			
+nav.main-nav li {
+	display: inline;
+}
 
-			
-			
-			
-			
-			
-	nav.main-nav.stickytop {
-    position:fixed;
-    top:-5%;
-    width: 100%; 
-	}
+nav.main-nav li a {
+	padding: 1em 1em;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
 
-	.container {
-		display: inline;
-		margin:0 auto;
-	  
-	}
-  
+nav.main-nav li a:hover {
+	color: yellow;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+nav.main-nav.stickytop {
+	position: fixed;
+	top: -5%;
+	width: 100%; 
+}
+
 
 
 /*----- WHAT IS AFLAC -----*/
 
 
-
 .section-divider { 
-	background: #3B87F8;
+	background: black;
 	position: relative;
 	width: 100%;
 	height: 100px;
 	margin: -40px 0px -40px 0px;
 	transform: rotate(-4deg);
   	transform: skew(0deg,-3deg);
-	z-index: 1;
+	z-index:1;
 } 
 
 #what-is-aflac { 
@@ -192,6 +225,7 @@ header .header-content .header-content-inner p {
 	margin-top: 60px;
 	margin-left: 15px;
 	font-size: 2.5em;
+	color: white;
 } 
 
 .aflac-video-section { 
@@ -210,17 +244,17 @@ header .header-content .header-content-inner p {
 #aflac-video-text { 
 	text-align: center;
 	vertical-align: middle;
-	color: #689CC7;
+	color: #4EAAB0;
 	font-family: Century Gothic;
 	font-size: 1.5em;
 }
 
 #about-pasadena-div { 
 	width: 100%;
-	background-color: white;
-	margin: -60px 0px 40px 0px;
+	background-color: #4EAAB0;
+	margin: -15px 0px -32px 0px;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 } 
 
 .section-heading { 
@@ -235,12 +269,15 @@ header .header-content .header-content-inner p {
 	height: auto;
 	padding: 30px 0px 130px 0px;
 	text-align: center;
+	background-color: #4EAAB0;
+	z-index: -1;
 } 
  
 #why-pasadena { 
 	text-align: center;
 	font-size: 2.5em;
 	margin: auto;
+	color: white;
 } 
 
 .about-videos {
@@ -252,7 +289,7 @@ header .header-content .header-content-inner p {
 	max-width: 100%;
 	width: 320px;
 	height: 320px;
-	border: 5px solid #FF7800;
+	border: 5px solid #F9CE4A;
 	border-radius: 100%;
 	padding: 50px;
 	margin: 50px;
@@ -267,7 +304,7 @@ header .header-content .header-content-inner p {
 }
 
 #old-town-video:hover > .blue-button-circle { 
-	background-color: #FF7800;
+	background-color: #F9CE4A;
 }
 
 #our-office-video { 
@@ -279,7 +316,7 @@ header .header-content .header-content-inner p {
 }
 
 #our-office-video:hover > .blue-button-circle { 
-	background-color: #FF7800;
+	background-color: #F9CE4A;
 } 
 
 .video-title {
@@ -299,7 +336,7 @@ header .header-content .header-content-inner p {
 	right: 50px;
 	bottom: 50px;
 	left: 50px;
-	background-color: #3B87F8;
+	background-color: #4EAAB0;
 	border-radius: 100%;
 	cursor: pointer;
 	position: absolute;
@@ -342,18 +379,19 @@ table {
 
 #pasadena-gallery-events-divider {
 	width: 100%;
-	background-color: #FF7800;
+	background-color: #F9CE4A;
 	display: relative;
-	z-index: -1;
+	z-index: 1;
 }
 
 .gallery-events-section {
 	width: 100%;
 	height: auto;
-	background-color: #FF7800;
+	background-color: #F9CE4A;
 	text-align: center;
 	vertical-align: middle;
 	padding: 25px;
+	padding-top: 50px;
 }
 
 .info-titles {
@@ -379,7 +417,6 @@ table {
 } 
 
 #gallery-div { 
-
 } 
 
 #events-div {
@@ -404,7 +441,6 @@ table {
 	text-align: left;
 	list-style-type: none;
 	border-bottom: 2px solid black;
-
 } 
 
 #blue-back { 
@@ -448,7 +484,7 @@ table {
 
 .slope {
 	width: 100%;
-	background: #FF7800;
+	background: #F9CE4A;
 	transform: rotate(-4deg);
   	transform: skew(0deg,-3deg);
 }
@@ -466,7 +502,7 @@ table {
 	line-height: 60px;
 	margin-bottom: 0px;
 	font-family: Century Gothic, 'Bitter', 'Trebuchet MS', Cambria;
-	background: #FF7800;
+	background: #F9CE4A;
 	color: #FFFFFF;
 }
 
@@ -477,9 +513,149 @@ table {
 
 .region{
 	margin: auto;
-	background-color: #3B87F7;
+	background-color: #4EAAB0;
 	font-family: 'Bitter', 'Trebuchet MS', Cambria;
 	border-radius: 5px;
+}
+
+
+.body {
+	background-color: black;
+	overflow: auto;
+	margin-top: 50px;
+}
+ 
+.figcaption {
+	opacity: 0;
+	position:absolute;
+	-webkit-transition: opacity 0.5s ease-out;  
+	-moz-transition: opacity 0.5s ease-out;  
+	-ms-transition: opacity 0.5s ease-out;  
+	-o-transition: opacity 0.5s ease-out;  
+	transition: opacity 0.5s ease-out;
+}
+
+/* (Changed ".figure" to "districtLogo"/"districtLogo2") – This is so the figcaption only appears when hovering over image */ 
+.districtLogo:hover ~ .figcaption {
+	max-width: 500px;
+	max-height: 500px;
+	opacity: 1;
+	position: absolute;
+	font-size: 1em;
+	line-height: 30px;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	margin-top: 20px; 
+	margin-left: 30px;   
+	margin-width: 80px;
+	padding: 10px;
+	border: 5px solid #FDCC0A;
+	border-radius: 15px;
+	background-color: #00A4B0;
+	color: black;
+	text-align: center;
+	z-index: 10;
+}
+
+.districtLogo2:hover ~ .figcaption {
+	max-width: 500px;
+	max-height: 500px;
+	opacity: 1;
+	position: absolute;
+	font-size: 1em;
+	line-height: 30px;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	margin-top: 10px; 
+	margin-left: 30px; 
+	margin-width: 80px;
+	padding: 10px;
+	border: 5px solid #FDCC0A;
+	border-radius: 15px;
+	background-color: #00A4B0; 
+	color: black;
+	text-align: center;
+	z-index: 10;
+}
+
+.rectangle2{
+	height:auto;
+	width:80%;
+	background:#000000;
+	position:center;
+	left:auto;
+	top:auto;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	z-index: 1;
+}
+
+.rectangle1{
+	height:auto;
+	width:80%;
+	background:#4eaab0;
+	position:relative;
+	left:auto;
+	top:auto;
+	border-radius: 15px;
+	margin: auto;
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	z-index: 5;
+	text-align: justify;
+}
+
+.circle {
+	height:250;
+	width:250;
+	border-radius:50%;
+	position:absolute; 
+	color: #fff;
+	margin-top: -135px;
+	margin-left: 80px;
+	overflow: visable;
+	z-index: 8;
+	display:absolute;
+}
+
+.lenzo {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 38px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.regdir {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 32.5px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.lefttext {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.righttext {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.teamname {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.teamleader {
+	font-family: 'Bitter', 'Trebuchet MS', Cambria;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /*----- AVAILABLE POSITIONS -----*/
@@ -488,7 +664,7 @@ table {
 	height: 200px;
 	margin-top: 30px;
 	margin-bottom: -45px;
-	background-color: #FF7800;
+	background-color: #F9CE4A;
 	z-index: 0;
 } 
 
@@ -508,7 +684,7 @@ hr, img {
 .job-position-div { 
 	width: 100%;
 	height: auto;
-	background-color: #FF7800;
+	background-color: #F9CE4A;
 } 
 
 a {
@@ -678,7 +854,7 @@ h5 {
 	border-radius: 0;
 	color: #fff;
 	width: 60%;	
-    	background-color: #3B87F8;
+    	background-color: #4EAAB0;
 	font-size: 200%;
 	line-height: 65px;
 	border-radius: 5px;
@@ -715,9 +891,24 @@ h5 {
 	text-align: right;
 }
 
+#positions-map-divider { 
+	height: 250px;
+	margin-top: -50px;
+	margin-bottom: -45px;
+	background-color:#F9CE4A ;
+	display: relative;
+	z-index: -1;
+}
+
+#google-map { 
+	display: relative;
+	z-index: -5;
+} 
+
 /*------Joe Additions---------*/
 
 /*----Display on Hover----*/
+
 a.hideDisplay{
   position: relative;
   z-index: 20; 
@@ -759,11 +950,13 @@ span.showBodyOfDisplayOnHover {
   color: #444;
   line-height: 18px; 
 }
-/*----Overlap for region section----*/
+
+/*---- Overlap for region section ----*/
+
 #rectangle{
     height:auto;
     width:72%;
-    background:#3b87f7;
+    background: #4EAAB0;
     position:relative;
     left:auto;
     top:auto;
@@ -799,30 +992,25 @@ span.showBodyOfDisplayOnHover {
 	font-size: 25px;
 }
 
-/* ----Contact Us section ----*/ 
-
-#footer{ 
-	margin: auto; 
-	width: 100%; 
-	font-family: Cambria, Georgia, serif; 
-	font-size: 32px; 
-	color: white;}
+/* ---- CONTACT US ----*/ 
 
 #footer {
 	width: 100%; 
 	height: 40%; 
-	background-color: 1E90FF;
+	background-color: black;
 	}
 	
 #footer #CONTACT_ME{
-	font-family: Cambria, Georgia, serif;
-	padding-right: 2%
+	font-family: Century Gothic;
+	padding-right: 2%;
+	font-size: 24px;
+	color: #ffffff;
 	}
 	
 #footer #contact_bar {
 	width: 100%; 
 	margin: auto; 
-	font-family: Cambria, Georgia, serif;
+	font-family: Century Gothic;
 	}
 
 #SpaceOut {
@@ -839,24 +1027,59 @@ span.showBodyOfDisplayOnHover {
 
 #SpaceOut #right{
 	width: 33%;
+	color: #ffffff;
+	font-size: 24px;
 }
 
 #footer #HEY_HEY_LISTEN table {
 	width: 80%;
-	padding-top: 20px;
+	padding-top: 5%;
 	padding-right: 10%;
-	padding-left: 25%;
+	padding-left: 27%;
 	padding-bottom: 5%;
-	font-size: 24px;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: left;
 }
 
-#footer table #Contact_US {
-	width:80%;
-	padding-top: 10px;
-	border-left: 1px solid #fff; 
-	border-right: 1px solid #fff;
+#footer #Submission_Box{
+	width:90%;
+	padding-top: 2%;
+	border-left: 2px solid #fff; 
+	border-right: 2px solid #fff;
+	font-family: Century Gothic;
+	font-size: 15px;
 }
 
-#footer #Social_Media table td{
-	width: 100px;
+#footer input, #footer button{
+	
+	display: block;
+	width:90%;
+	padding:8px;
+}
+
+#footer button{
+	padding:6px 12px 8px; 
+	text-transform:uppercase; 
+	border:none;
+	cursor:pointer;
+}
+
+#footer textarea	{
+	width: 90%;
+}
+
+form, fieldset{margin:0px; padding:0; border:none;
+}
+#footer button{
+	color:#FFFFFF; 
+	background-color:#3e4047;
+}
+legend{display:none;}
+inherit; vertical-align:middle;}
+
+#footer #Social_Media table {
+	font-family: Century Gothic;
+	font-size: 15px;
+	color: #ffffff;
 }
